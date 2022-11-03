@@ -1,0 +1,56 @@
+body {
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(189, 41, 157, 0.8),
+            rgba(54, 45, 172, 0.7),
+            rgba(45, 136, 172, 0.7)),
+        url("../images/background.jpg");
+    color:                 white;
+    background-repeat:     no-repeat;
+    background-attachment: fixed;
+    background-size:       cover;
+    width:                 fit-content;
+    height:                fit-content;
+    max-width:             800px;
+    margin:                auto;
+    display:               flex;
+    flex-direction:        column;
+    font-family:           Arial, Helvetica, sas-serif;
+    padding-top: 5em;
+}
+
+header {
+    margin:     none;
+    padding:    10px;
+    text-align: center;
+}
+
+header p {
+    font-style: italic;
+}
+
+form {
+    background-color: rgba(89, 37, 185, 0.7);
+    margin:           none;
+    padding:          20px 10px;
+    border-radius:    12px;
+    max-height:       fit-content;
+}
+
+button {
+    margin-top      : 3%;
+    color           : white;
+    background-color: rgb(8, 12, 233);
+    border-radius   : 2px;
+    box-shadow      : none;
+    padding-top     : 1%;
+    padding-bottom  : 1%;
+    border          : none;
+}
+
+.form-element {
+    display:        flex;
+    flex-direction: column;
+    margin:         0.8em;
+}

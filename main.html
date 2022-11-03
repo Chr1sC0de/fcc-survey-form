@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ice-Cream Company Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Ice-Cream Company Survery Form</h1> 
+            <p id="description">
+                Thank you for trying our ice-cream, if you can, please 
+                take the time to help us improve our services
+            </p>
+        </header>
+        <main>
+            <form id="survery-form">
+                <div class="form-element" id="name">
+                    <label for="name">Name</label>
+                    <input 
+                        type        = "text"
+                        id          = "name"
+                        name        = "name"
+                        placeholder = "First and Last Name"
+                    >
+                </div>
+                <div class="form-element" id="email">
+                    <label for="email">Email</label>
+                    <input
+                        type         = "email"
+                        id           = "email"
+                        name         = "email-label"
+                        place-holder = "Email Address"
+                    >
+                </div>
+                <div class="form-element" id="number">
+                    <label for="number">Contact Number</label>
+                    <input 
+                        type        = "number"
+                        id          = "number"
+                        name        = "number-label"
+                        placeholder = "Mobile Number"
+                        min         = "0400000000"
+                        max         = "0500000000"
+                        oninvalid   = "this.setCustomValidity('Invalid Phone Number')"
+                    >
+                </div>
+                <div class="form-element" id="tub-size">
+                    <p>Which tub size did you choose?</p>
+                    <label><input name="tub-size" type="radio" class="input-radio" value="250ml">250mL</label>
+                    <label><input name="tub-size" type="radio" class="input-radio" value="500ml">500mL</label>
+                    <label><input name="tub-size" type="radio" class="input-radio" value="1l">1L</label>
+                    <label><input name="tub-size" type="radio" class="input-radio" value="1.5l">1.5L</label>
+                </div>
+                <div class="form-element" id="favorite-flavour">
+                    <p>
+                        Which ice-cream flavour did you purchase?
+                    </p>
+                    <select name="dropdown" id="dropdown">
+                        <option value="black sesame">Black Sesame</option>
+                        <option value="chai">Chai</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="hojicha">Hojicha</option>
+                        <option value="matcha">Matcha</option>
+                        <option value="olive">Olive</option>
+                        <option value="taro">Taro</option>
+                    </select>
+                </div>
+                <div class="form-element" id="tastiness-rating">
+                    <p>How would you rate the tastiness?</p>
+                    <label>
+                        <input name="tastiness-rating" type="radio" value="1">
+                        1 - Ugh
+                    </label>
+                    <label>
+                        <input name="tastiness-rating" type="radio" value="2">
+                        2 - Meh
+                    </label>
+                    <label>
+                        <input name="tastiness-rating" type="radio" value="3">
+                            3 - Oh
+                    </label>
+                    <label>
+                        <input name="tastiness-rating" type="radio" value="4">
+                        4 - Good
+                    </label>
+                    <label>
+                        <input name="tastiness-rating" type="radio" value="5">
+                        5 - Awesome
+                    </label>
+                </div>
+                <div class="form-element">
+                    <p>
+                        Of the following flavors, are there any you would purchase if
+                        we added them to our current line?
+                    </p>
+                    <label> <input type="checkbox" value="cheese" class="input-checkbox"> Cheese </label>
+                    <label> <input type="checkbox" value="chocolate" class="input-checkbox"> Chocolate </label>
+                    <label> <input type="checkbox" value="coffee" class="input-checkbox"> Coffee </label>
+                    <label> <input type="checkbox" value="ube" class="input-checkbox"> Ube </label>
+                    <label> <input type="checkbox" value="vanilla" class="input-checkbox"> Vanilla </label>
+                </div>
+                <div class="form-element">
+                    <p>Any comments or suggestions?</p>
+                    <textarea
+                        name        = "comment"
+                        id          = "comments"
+                        placeholder = "Enter comments here.."
+                    ></textarea>
+                </div>
+                <div class="form-element">
+                    <button type="submit" id="submit">
+                        Submit
+                    </button>
+                </div>
+            </form> 
+        </main>
+
+    </body>
+</html>
